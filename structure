@@ -1,0 +1,57 @@
+mindmint-financial/
+│
+├── index.html                      # Landing page: overview, featured guides, quick tools
+├── learn.html                       # Financial literacy hub: articles, tutorials, videos
+├── tools.html                       # Financial tools: calculators, planners, trackers
+├── accounts.html                    # User accounts dashboard (optional future backend)
+├── login.html                        # Login / authentication page
+├── about.html                        # About MindMint, mission, references
+│
+├── /css
+│   ├── main.css                     # Core styling
+│   ├── layout.css                   # Grid, flex, responsive layout
+│   ├── components.css               # Cards, modals, tabs, buttons
+│   ├── colors.css                   # Clean, bright financial theme (greens, blues, neutrals)
+│   └── animations.css               # Hover effects, smooth transitions, tool animations
+│
+├── /js
+│   ├── main.js                      # Navbar, menu toggles, site-wide scripts
+│   ├── learn.js                     # Load/display educational articles and videos
+│   ├── tools.js                     # Interactive calculators, planners, budget trackers
+│   ├── accounts.js                  # Dashboard logic (mock data or future backend)
+│   └── utils.js                     # Reusable helper functions
+│
+├── /data
+│   ├── articles.json                # Financial literacy articles/tutorials
+│   ├── guides.json                  # PDF guides and worksheets
+│   ├── tools.json                   # Tool metadata (calculators, planners)
+│   └── accounts.json                # Sample account or demo data for dashboard
+│
+├── /assets
+│   ├── images/
+│   │   ├── hero/                    # Hero banners for pages
+│   │   ├── accounts/                # Account dashboard icons/illustrations
+│   │   ├── learn/                   # Educational graphics, charts
+│   │   └── tools/                   # Tool screenshots/icons
+│   │
+│   ├── icons/                       # SVG or PNG for UI elements
+│   ├── pdfs/                         # Financial worksheets, planners, guides
+│   └── fonts/                        # Professional, readable fonts
+│
+├── /components
+│   ├── navbar.html
+│   ├── footer.html
+│   ├── article-card.html            # Card for each financial article/tutorial
+│   ├── guide-card.html              # PDF guide or worksheet preview card
+│   ├── tool-card.html               # Calculator/planner card
+│   └── account-card.html            # Dashboard account overview card
+│
+└── /docs
+|    ├── design.md                     # UI style, color palette, iconography
+|    ├── content-plan.md               # Financial literacy topics, tools, guides
+|    ├── roadmap.md                    # Feature roadmap (budget trackers, login backend)
+|    ├── guides.md                     # How-to content planning workflow
+|    └── sources.md                    # References for financial data & best practices
+|
+│
+└── README.md                 # Project overview, instructions

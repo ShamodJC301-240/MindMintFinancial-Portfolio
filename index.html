@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindMint Financial — Learn & Grow Financially</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>MindMint Financial</h1>
+    <nav>
+      <ul>
+        <li><a href="#accounts">Accounts</a></li>
+        <li><a href="#learn">Learn</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#login">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <h2>Bank Smarter. Learn Faster.</h2>
+      <p>Your money, your growth, your future.</p>
+      <button>Get Started</button>
+    </section>
+
+    <!-- Accounts Section -->
+    <section id="accounts">
+      <h2>Your Accounts</h2>
+      <div class="account-card">
+        <h3>Checking Account</h3>
+        <p>Balance: <span id="checking-balance">$0.00</span></p>
+      </div>
+
+      <div class="account-card">
+        <h3>Savings Account</h3>
+        <p>Balance: <span id="savings-balance">$0.00</span></p>
+      </div>
+    </section>
+
+    <!-- Learning Center -->
+    <section id="learn">
+      <h2>Financial Literacy</h2>
+      <div class="learn-card">
+        <h3>Budgeting Basics</h3>
+        <p>Learn how to manage your spending with easy steps.</p>
+      </div>
+      <div class="learn-card">
+        <h3>Building Credit</h3>
+        <p>Understand how credit works and how to improve yours.</p>
+      </div>
+      <div class="learn-card">
+        <h3>Saving for Emergencies</h3>
+        <p>Learn why every household needs an emergency fund.</p>
+      </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools">
+      <h2>Tools</h2>
+      <button id="calc-btn">Open Budget Calculator</button>
+      <div id="calculator">
+        <h3>Monthly Budget Calculator</h3>
+        <input type="number" id="income" placeholder="Monthly Income">
+        <input type="number" id="expenses" placeholder="Monthly Expenses">
+        <button id="calc-sum">Calculate Savings</button>
+        <p id="calc-result"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 MindMint Financial — Financial Literacy for Everyone</p>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
