@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learn — The Mint</title>
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo">The <span>Mint</span></a>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="learn.html" class="active">Learn</a></li>
+    <li><a href="tools.html">Tools</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="accounts.html" class="nav-cta">My Account</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="section-label">Financial Literacy</div>
+    <h1 class="section-title">Learn to grow your money.</h1>
+    <p class="section-sub">Articles, guides, and tutorials to help every New Yorker build real financial confidence.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="tabs">
+      <button class="tab active" data-category="all">All Topics</button>
+      <button class="tab" data-category="Saving">Saving</button>
+      <button class="tab" data-category="Investing">Investing</button>
+      <button class="tab" data-category="Budgeting">Budgeting</button>
+      <button class="tab" data-category="Credit">Credit</button>
+      <button class="tab" data-category="Debt">Debt</button>
+    </div>
+    <div class="grid-3" id="articles-grid">
+      <!-- Populated by learn.js -->
+      <div class="card lift"><span class="card-tag">Saving</span><div class="card-title">Building Your First Emergency Fund</div><p class="card-desc">Learn why 3–6 months of expenses is the foundation of financial security and how to get there step by step.</p><div style="margin-top:16px;display:flex;align-items:center"><span style="font-size:12px;color:var(--text-muted)">5 min read</span><a href="#" class="btn btn-sm btn-outline" style="margin-left:auto">Read →</a></div></div>
+      <div class="card lift"><span class="card-tag">Investing</span><div class="card-title">How Compound Interest Actually Works</div><p class="card-desc">Einstein called it the eighth wonder of the world. Here's how to make it work for you, not against you.</p><div style="margin-top:16px;display:flex;align-items:center"><span style="font-size:12px;color:var(--text-muted)">7 min read</span><a href="#" class="btn btn-sm btn-outline" style="margin-left:auto">Read →</a></div></div>
+      <div class="card lift"><span class="card-tag">Budgeting</span><div class="card-title">The 50/30/20 Budget Rule Explained</div><p class="card-desc">A simple framework for allocating your income to needs, wants, and savings — no spreadsheet required.</p><div style="margin-top:16px;display:flex;align-items:center"><span style="font-size:12px;color:var(--text-muted)">4 min read</span><a href="#" class="btn btn-sm btn-outline" style="margin-left:auto">Read →</a></div></div>
+      <div class="card lift"><span class="card-tag">Credit</span><div class="card-title">Credit Scores: What Actually Moves the Needle</div><p class="card-desc">Your score is made of five factors. We break down which ones matter most and how to improve them fast.</p><div style="margin-top:16px;display:flex;align-items:center"><span style="font-size:12px;color:var(--text-muted)">6 min read</span><a href="#" class="btn btn-sm btn-outline" style="margin-left:auto">Read →</a></div></div>
+      <div class="card lift"><span class="card-tag">Investing</span><div class="card-title">Roth vs Traditional IRA: Which Is Right for You?</div><p class="card-desc">Tax now or tax later? The answer depends on your current bracket and where you expect to be at retirement.</p><div style="margin-top:16px;display:flex;align-items:center"><span style="font-size:12px;color:var(--text-muted)">8 min read</span><a href="#" class="btn btn-sm btn-outline" style="margin-left:auto">Read →</a></div></div>
+      <div class="card lift"><span class="card-tag">Debt</span><div class="card-title">Paying Off Debt: Avalanche vs Snowball Method</div><p class="card-desc">Two proven strategies for eliminating debt. One saves more money; the other keeps you more motivated.</p><div style="margin-top:16px;display:flex;align-items:center"><span style="font-size:12px;color:var(--text-muted)">5 min read</span><a href="#" class="btn btn-sm btn-outline" style="margin-left:auto">Read →</a></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Guides -->
+<section class="section alt">
+  <div class="container">
+    <div class="section-label">Free Downloads</div>
+    <h2 class="section-title">Guides & Worksheets</h2>
+    <p class="section-sub" style="margin-bottom:40px">Printable and fillable PDFs to help you take action on what you've learned.</p>
+    <div class="grid-3">
+      <div class="card lift"><div class="card-icon">📋</div><div class="card-title">Monthly Budget Worksheet</div><p class="card-desc">A fillable PDF to track income, expenses, and savings goals each month.</p><a href="#" class="btn btn-sm btn-outline" style="margin-top:16px">Download PDF</a></div>
+      <div class="card lift"><div class="card-icon">💳</div><div class="card-title">Debt Payoff Planner</div><p class="card-desc">List all your debts, apply the avalanche or snowball method, and see your payoff date.</p><a href="#" class="btn btn-sm btn-outline" style="margin-top:16px">Download PDF</a></div>
+      <div class="card lift"><div class="card-icon">📈</div><div class="card-title">Investment Starter Checklist</div><p class="card-desc">A step-by-step checklist for opening your first investment account and choosing funds.</p><a href="#" class="btn btn-sm btn-outline" style="margin-top:16px">Download PDF</a></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div><div class="footer-logo">The <span>Mint</span></div><p class="footer-desc">Modern banking for New York City.<br>FDIC insured. Member since 2024.</p></div>
+  <div><div class="footer-h">Banking</div><ul class="footer-links"><li><a href="accounts.html">Checking</a></li><li><a href="accounts.html">Savings</a></li></ul></div>
+  <div><div class="footer-h">Learn</div><ul class="footer-links"><li><a href="learn.html">Articles</a></li><li><a href="tools.html">Tools</a></li></ul></div>
+  <div><div class="footer-h">Company</div><ul class="footer-links"><li><a href="about.html">About</a></li><li><a href="#">Careers</a></li></ul></div>
+</footer>
+<div class="footer-bottom">© 2026 The Mint Bank. All rights reserved.</div>
+
+<script type="module" src="js/main.js"></script>
+<script type="module" src="js/learn.js"></script>
+</body>
+</html>

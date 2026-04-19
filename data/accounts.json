@@ -1,0 +1,19 @@
+{
+  "user": {
+    "name": "Marcus Williams",
+    "email": "marcus@example.com",
+    "memberSince": "2024-03-01"
+  },
+  "accounts": [
+    { "type": "Checking", "number": "••7294", "balance": 12480.00 },
+    { "type": "Savings",  "number": "••8821", "balance": 5200.00, "apy": 2.8 }
+  ],
+  "transactions": [
+    { "id": 1, "icon": "🍕", "name": "Joe's Pizza",        "date": "2026-04-10", "amount": -18.50 },
+    { "id": 2, "icon": "💰", "name": "Direct Deposit",      "date": "2026-04-10", "amount": 2400.00 },
+    { "id": 3, "icon": "🚇", "name": "MTA MetroCard",       "date": "2026-04-09", "amount": -33.00 },
+    { "id": 4, "icon": "🛒", "name": "Trader Joe's",        "date": "2026-04-08", "amount": -74.30 },
+    { "id": 5, "icon": "☕", "name": "Blue Bottle Coffee",  "date": "2026-04-08", "amount": -7.25  },
+    { "id": 6, "icon": "💡", "name": "ConEd Electric",      "date": "2026-03-22", "amount": -94.10 }
+  ]
+}

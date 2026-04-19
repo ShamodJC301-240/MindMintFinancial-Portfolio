@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Mint — Banking Reimagined</title>
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">The <span>Mint</span></div>
+  <ul>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="learn.html">Learn</a></li>
+    <li><a href="tools.html">Tools</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="accounts.html" class="nav-cta">My Account</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home" style="min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:120px 48px 80px;position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 60% at 80% 50%,var(--mint-pale) 0%,transparent 70%),radial-gradient(ellipse 40% 40% at 10% 80%,var(--mint-mist) 0%,transparent 60%)"></div>
+  <div style="position:relative;z-index:1">
+    <div class="badge" style="margin-bottom:28px;animation:pulse 2s infinite">Now Open in New York City</div>
+    <h1 style="font-family:'Playfair Display',serif;font-size:clamp(44px,5vw,72px);font-weight:900;line-height:1.08;letter-spacing:-2px;margin-bottom:24px">Banking that<br><em style="font-style:italic;color:var(--mint)">grows</em> with you.</h1>
+    <p style="font-size:17px;color:var(--text-muted);line-height:1.7;max-width:420px;margin-bottom:40px">The Mint is a modern bank built for New Yorkers — fresh, transparent, and beautifully simple. Manage your money the way it was meant to be.</p>
+    <div style="display:flex;gap:14px;align-items:center">
+      <a href="login.html" class="btn btn-primary btn-lg">Open an Account</a>
+      <a href="learn.html" style="color:var(--text-muted);font-size:15px;font-weight:500">See what's included →</a>
+    </div>
+    <div style="display:flex;gap:40px;margin-top:56px;padding-top:40px;border-top:1px solid var(--mint-mist)">
+      <div><div style="font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:var(--mint)">$0</div><div style="font-size:12px;color:var(--text-muted);margin-top:2px">Monthly fees</div></div>
+      <div><div style="font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:var(--mint)">5</div><div style="font-size:12px;color:var(--text-muted);margin-top:2px">NYC Locations</div></div>
+      <div><div style="font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:var(--mint)">2.8%</div><div style="font-size:12px;color:var(--text-muted);margin-top:2px">APY Savings</div></div>
+    </div>
+  </div>
+  <div style="position:relative;z-index:1;display:flex;justify-content:center">
+    <div style="position:relative;width:340px;height:380px">
+      <div style="position:absolute;width:300px;height:180px;border-radius:20px;padding:24px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 24px 60px rgba(26,77,50,0.25);background:linear-gradient(135deg,var(--gold) 0%,#9a7a2a 100%);top:0;left:60px;animation:float2 4s ease-in-out infinite">
+        <div style="font-family:'Playfair Display',serif;color:rgba(255,255,255,0.9);font-size:15px;font-weight:700">The Mint</div>
+        <div style="color:rgba(255,255,255,0.7);font-size:13px;letter-spacing:3px">•••• •••• •••• 4821</div>
+        <div style="display:flex;justify-content:space-between"><span style="color:rgba(255,255,255,0.9);font-size:12px">A. JOHNSON</span><span style="color:rgba(255,255,255,0.7);font-size:12px">VISA</span></div>
+      </div>
+      <div style="position:absolute;width:300px;height:180px;border-radius:20px;padding:24px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 24px 60px rgba(26,77,50,0.25);background:linear-gradient(135deg,var(--mint) 0%,var(--forest) 100%);top:40px;left:20px;z-index:2;animation:float 4s ease-in-out infinite">
+        <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-family:'Playfair Display',serif;color:rgba(255,255,255,0.9);font-size:15px;font-weight:700">The Mint</span><div style="width:32px;height:24px;background:linear-gradient(135deg,#f0c040,#c8a030);border-radius:4px"></div></div>
+        <div style="color:rgba(255,255,255,0.7);font-size:13px;letter-spacing:3px">•••• •••• •••• 7294</div>
+        <div style="display:flex;justify-content:space-between"><span style="color:rgba(255,255,255,0.9);font-size:12px">M. WILLIAMS</span><span style="color:rgba(255,255,255,0.7);font-size:12px">VISA</span></div>
+      </div>
+      <div style="position:absolute;bottom:0;right:0;background:white;border-radius:16px;padding:16px 20px;box-shadow:0 8px 32px rgba(26,77,50,0.12);z-index:3;animation:float3 5s ease-in-out infinite">
+        <div style="font-size:11px;color:var(--text-muted);font-weight:500">Current Balance</div>
+        <div style="font-family:'Playfair Display',serif;font-size:22px;color:var(--mint);font-weight:700;margin-top:2px">$12,480.00</div>
+        <div style="font-size:11px;color:var(--mint-light);margin-top:2px">↑ +$340 this week</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section alt">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:56px">
+      <div class="section-label">Why The Mint</div>
+      <h2 class="section-title">Everything you need, nothing you don't.</h2>
+      <p class="section-sub" style="margin:0 auto">Banking simplified for the modern New Yorker.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card lift"><div class="card-icon">💸</div><div class="card-title">Instant Deposits</div><p class="card-desc">Deposit checks by photo or transfer funds instantly. Available the moment it lands.</p></div>
+      <div class="card lift"><div class="card-icon">🏧</div><div class="card-title">Free Withdrawals</div><p class="card-desc">40,000+ fee-free ATMs nationwide plus all 5 NYC branch locations.</p></div>
+      <div class="card lift"><div class="card-icon">🔒</div><div class="card-title">FDIC Insured</div><p class="card-desc">Your deposits are insured up to $250,000. Always protected.</p></div>
+      <div class="card lift"><div class="card-icon">📊</div><div class="card-title">Smart Insights</div><p class="card-desc">Automatic spending breakdowns and monthly budget summaries.</p></div>
+      <div class="card lift"><div class="card-icon">🌿</div><div class="card-title">No Hidden Fees</div><p class="card-desc">No monthly fees, no minimum balance, no surprises. Ever.</p></div>
+      <div class="card lift"><div class="card-icon">⚡</div><div class="card-title">Instant Transfers</div><p class="card-desc">Send money to anyone instantly — 24/7, no waiting.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATIONS -->
+<section class="section">
+  <div class="container">
+    <div class="two-col">
+      <div>
+        <div class="section-label">Find Us</div>
+        <h2 class="section-title">Five branches across New York City.</h2>
+        <p class="section-sub" style="margin-bottom:32px">In-person service, cash deposits, and expert financial advice — no appointment needed.</p>
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <div class="card" style="padding:20px"><strong>Midtown Manhattan</strong><br><span style="font-size:13px;color:var(--text-muted)">425 Fifth Avenue · Mon–Fri 8am–6pm</span></div>
+          <div class="card" style="padding:20px"><strong>Lower Manhattan / FiDi</strong><br><span style="font-size:13px;color:var(--text-muted)">88 Wall Street · Mon–Fri 9am–5pm</span></div>
+          <div class="card" style="padding:20px"><strong>Brooklyn — Park Slope</strong><br><span style="font-size:13px;color:var(--text-muted)">212 7th Avenue · Mon–Sat 9am–6pm</span></div>
+          <div class="card" style="padding:20px"><strong>Queens — Astoria</strong><br><span style="font-size:13px;color:var(--text-muted)">31-10 Steinway St · Mon–Fri 9am–5pm</span></div>
+          <div class="card" style="padding:20px"><strong>Harlem</strong><br><span style="font-size:13px;color:var(--text-muted)">2360 Adam Clayton Powell Jr Blvd · Mon–Sat 9am–5pm</span></div>
+        </div>
+      </div>
+      <div style="background:linear-gradient(135deg,var(--mint-pale),var(--mint-mist));border-radius:24px;height:460px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;border:2px solid var(--mint-mist)">
+        <div style="position:absolute;top:38%;left:50%;width:14px;height:14px;background:var(--mint);border-radius:50%;border:3px solid white;box-shadow:0 0 0 4px rgba(45,122,79,0.2)"></div>
+        <div style="position:absolute;top:30%;left:54%;background:white;padding:6px 10px;border-radius:8px;font-size:11px;font-weight:700;color:var(--mint);box-shadow:0 4px 12px rgba(26,77,50,0.15)">Midtown</div>
+        <div style="position:absolute;top:68%;left:48%;width:14px;height:14px;background:var(--mint);border-radius:50%;border:3px solid white;box-shadow:0 0 0 4px rgba(45,122,79,0.2)"></div>
+        <div style="position:absolute;top:60%;left:52%;background:white;padding:6px 10px;border-radius:8px;font-size:11px;font-weight:700;color:var(--mint);box-shadow:0 4px 12px rgba(26,77,50,0.15)">FiDi</div>
+        <div style="position:absolute;top:78%;left:56%;width:14px;height:14px;background:var(--mint);border-radius:50%;border:3px solid white;box-shadow:0 0 0 4px rgba(45,122,79,0.2)"></div>
+        <div style="position:absolute;top:83%;left:58%;background:white;padding:6px 10px;border-radius:8px;font-size:11px;font-weight:700;color:var(--mint);box-shadow:0 4px 12px rgba(26,77,50,0.15)">Park Slope</div>
+        <div style="position:absolute;top:28%;left:63%;width:14px;height:14px;background:var(--mint);border-radius:50%;border:3px solid white;box-shadow:0 0 0 4px rgba(45,122,79,0.2)"></div>
+        <div style="position:absolute;top:20%;left:66%;background:white;padding:6px 10px;border-radius:8px;font-size:11px;font-weight:700;color:var(--mint);box-shadow:0 4px 12px rgba(26,77,50,0.15)">Astoria</div>
+        <div style="position:absolute;top:18%;left:44%;width:14px;height:14px;background:var(--mint);border-radius:50%;border:3px solid white;box-shadow:0 0 0 4px rgba(45,122,79,0.2)"></div>
+        <div style="position:absolute;top:10%;left:34%;background:white;padding:6px 10px;border-radius:8px;font-size:11px;font-weight:700;color:var(--mint);box-shadow:0 4px 12px rgba(26,77,50,0.15)">Harlem</div>
+        <span style="color:var(--mint);font-size:13px;font-weight:600;opacity:0.35">NYC Map</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:linear-gradient(135deg,var(--mint),var(--forest));text-align:center;padding:120px 48px;position:relative;overflow:hidden">
+  <div class="section-label" style="color:rgba(255,255,255,0.6)">Get Started Today</div>
+  <h2 class="section-title" style="color:white;margin:0 auto 16px;max-width:560px">Ready to bank differently?</h2>
+  <p class="section-sub" style="color:rgba(255,255,255,0.7);margin:0 auto 44px;text-align:center">Join thousands of New Yorkers. Takes 5 minutes — no paperwork, no hassle.</p>
+  <div style="display:flex;gap:12px;max-width:420px;margin:0 auto">
+    <input type="email" id="join-email" placeholder="Enter your email address" style="flex:1;padding:16px 20px;border-radius:50px;border:1.5px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.12);font-size:15px;color:white;outline:none;font-family:'DM Sans',sans-serif" onfocus="this.style.borderColor='rgba(255,255,255,0.5)'" onblur="this.style.borderColor='rgba(255,255,255,0.2)'">
+    <button class="btn btn-white" onclick="handleJoin()">Open Account</button>
+  </div>
+</section>
+
+<footer>
+  <div><div class="footer-logo">The <span>Mint</span></div><p class="footer-desc">Modern banking for New York City.<br>FDIC insured. Member since 2024.</p></div>
+  <div><div class="footer-h">Banking</div><ul class="footer-links"><li><a href="accounts.html">Checking</a></li><li><a href="accounts.html">Savings</a></li><li><a href="accounts.html">Debit Card</a></li></ul></div>
+  <div><div class="footer-h">Learn</div><ul class="footer-links"><li><a href="learn.html">Articles</a></li><li><a href="learn.html">Guides</a></li><li><a href="tools.html">Tools</a></li></ul></div>
+  <div><div class="footer-h">Company</div><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="#">Careers</a></li><li><a href="#">Privacy</a></li></ul></div>
+</footer>
+<div class="footer-bottom">© 2026 The Mint Bank. All rights reserved. FDIC Insured · Equal Housing Lender</div>
+
+<script type="module" src="js/main.js"></script>
+<script>
+function handleJoin() {
+  const email = document.getElementById('join-email').value;
+  if (!email) { alert('Please enter your email.'); return; }
+  alert('Welcome to The Mint! We\'ll be in touch at ' + email);
+  document.getElementById('join-email').value = '';
+}
+</script>
+</body>
+</html>

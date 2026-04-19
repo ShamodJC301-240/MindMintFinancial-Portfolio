@@ -1,0 +1,11 @@
+<!-- Article Card Template (populated via learn.js) -->
+<!-- Usage: dynamically rendered by learn.js from data/articles.json -->
+<div class="card lift">
+  <span class="card-tag">{{category}}</span>
+  <div class="card-title">{{title}}</div>
+  <p class="card-desc">{{summary}}</p>
+  <div style="margin-top:16px;display:flex;gap:10px;align-items:center">
+    <span style="font-size:12px;color:var(--text-muted)">{{readTime}} min read</span>
+    <a href="{{url}}" class="btn btn-sm btn-outline" style="margin-left:auto">Read →</a>
+  </div>
+</div>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Account — The Mint</title>
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo">The <span>Mint</span></a>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="learn.html">Learn</a></li>
+    <li><a href="tools.html">Tools</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="accounts.html" class="nav-cta">My Account</a></li>
+  </ul>
+</nav>
+
+<div style="min-height:100vh;background:var(--off-white);padding-top:80px">
+  <div style="max-width:940px;margin:0 auto;padding:60px 24px">
+    <div style="margin-bottom:40px">
+      <h1 style="font-family:'Playfair Display',serif;font-size:40px;font-weight:800;margin-bottom:4px">My Account</h1>
+      <p style="color:var(--text-muted)">Welcome back, Marcus. Here's your financial overview.</p>
+    </div>
+
+    <!-- Balance cards -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:28px">
+      <div style="background:linear-gradient(135deg,var(--mint),var(--forest));border-radius:20px;padding:28px;color:white;grid-column:span 2;display:grid;grid-template-columns:1fr 1fr;align-items:center">
+        <div>
+          <div style="font-size:12px;opacity:0.7;margin-bottom:4px">Checking Balance</div>
+          <div data-balance style="font-family:'Playfair Display',serif;font-size:38px;font-weight:700;letter-spacing:-1px">$12,480.00</div>
+          <div style="color:rgba(255,255,255,0.6);font-size:13px;margin-top:4px">Account ••7294</div>
+        </div>
+        <div style="text-align:right">
+          <div style="font-size:12px;opacity:0.7;margin-bottom:4px">Savings Balance</div>
+          <div data-savings style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700">$5,200.00</div>
+          <div style="color:rgba(255,255,255,0.6);font-size:13px;margin-top:4px">2.8% APY</div>
+        </div>
+      </div>
+      <div class="card"><div style="font-size:12px;color:var(--text-muted);margin-bottom:4px">This Month — Spent</div><div style="font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:var(--mint)">$1,842.30</div><div style="font-size:12px;color:var(--text-muted);margin-top:4px">↓ 12% from last month</div></div>
+      <div class="card"><div style="font-size:12px;color:var(--text-muted);margin-bottom:4px">This Month — Earned</div><div style="font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:var(--mint)">$4,800.00</div><div style="font-size:12px;color:var(--text-muted);margin-top:4px">2 direct deposits</div></div>
+    </div>
+
+    <!-- Quick actions -->
+    <div style="display:flex;gap:14px;margin-bottom:28px">
+      <button class="btn btn-outline" style="flex:1" onclick="openModal('deposit-modal')">⬇ Deposit Money</button>
+      <button class="btn btn-outline" style="flex:1" onclick="openModal('withdraw-modal')">⬆ Withdraw Money</button>
+      <button class="btn btn-outline" style="flex:1" onclick="openModal('transfer-modal')">↔ Transfer</button>
+    </div>
+
+    <!-- Transactions -->
+    <div class="card">
+      <div style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;margin-bottom:20px">Transaction History</div>
+      <div id="transaction-list"></div>
+    </div>
+  </div>
+</div>
+
+<!-- DEPOSIT MODAL -->
+<div class="modal-overlay" id="deposit-modal">
+  <div class="modal">
+    <div id="deposit-form-content">
+      <div class="modal-title">Deposit Money</div>
+      <div class="modal-sub">Add funds to your Mint checking account.</div>
+      <div class="field"><label>DEPOSIT AMOUNT</label><input type="number" id="deposit-amount" placeholder="$0.00" min="1"></div>
+      <div class="field"><label>SOURCE</label><select><option>External Bank Transfer (ACH)</option><option>Mobile Check Deposit</option><option>Wire Transfer</option><option>Cash — Branch Deposit</option></select></div>
+      <div class="modal-actions"><button class="btn btn-outline" style="flex:1" onclick="closeModal('deposit-modal')">Cancel</button><button class="btn btn-primary" style="flex:2" onclick="doDeposit()">Deposit Funds</button></div>
+    </div>
+    <div class="success-msg" id="deposit-success"><div class="success-icon">✅</div><div class="success-text">Deposit Successful!</div><div class="success-sub" id="deposit-success-msg"></div><div class="modal-actions" style="margin-top:24px"><button class="btn btn-primary" style="width:100%" onclick="closeModal('deposit-modal')">Done</button></div></div>
+  </div>
+</div>
+
+<!-- WITHDRAW MODAL -->
+<div class="modal-overlay" id="withdraw-modal">
+  <div class="modal">
+    <div id="withdraw-form-content">
+      <div class="modal-title">Withdraw Money</div>
+      <div class="modal-sub">Move funds out of your Mint account.</div>
+      <div class="field"><label>WITHDRAWAL AMOUNT</label><input type="number" id="withdraw-amount" placeholder="$0.00" min="1"></div>
+      <div class="field"><label>DESTINATION</label><select><option>External Bank Account (ACH)</option><option>ATM / Branch Cash</option><option>Wire Transfer</option></select></div>
+      <div class="modal-actions"><button class="btn btn-outline" style="flex:1" onclick="closeModal('withdraw-modal')">Cancel</button><button class="btn btn-primary" style="flex:2" onclick="doWithdraw()">Withdraw Funds</button></div>
+    </div>
+    <div class="success-msg" id="withdraw-success"><div class="success-icon">✅</div><div class="success-text">Withdrawal Successful!</div><div class="success-sub" id="withdraw-success-msg"></div><div class="modal-actions" style="margin-top:24px"><button class="btn btn-primary" style="width:100%" onclick="closeModal('withdraw-modal')">Done</button></div></div>
+  </div>
+</div>
+
+<!-- TRANSFER MODAL -->
+<div class="modal-overlay" id="transfer-modal">
+  <div class="modal">
+    <div id="transfer-form-content">
+      <div class="modal-title">Transfer Funds</div>
+      <div class="modal-sub">Send money instantly to anyone.</div>
+      <div class="field"><label>RECIPIENT</label><input type="text" placeholder="Name or email address"></div>
+      <div class="field"><label>AMOUNT</label><input type="number" placeholder="$0.00" min="1"></div>
+      <div class="field"><label>NOTE (OPTIONAL)</label><input type="text" placeholder="What's it for?"></div>
+      <div class="modal-actions"><button class="btn btn-outline" style="flex:1" onclick="closeModal('transfer-modal')">Cancel</button><button class="btn btn-primary" style="flex:2" onclick="doTransfer()">Send Money</button></div>
+    </div>
+    <div class="success-msg" id="transfer-success"><div class="success-icon">✅</div><div class="success-text">Transfer Sent!</div><div class="success-sub">Your transfer was processed instantly.</div><div class="modal-actions" style="margin-top:24px"><button class="btn btn-primary" style="width:100%" onclick="closeModal('transfer-modal')">Done</button></div></div>
+  </div>
+</div>
+
+<script type="module" src="js/main.js"></script>
+<script type="module" src="js/accounts.js"></script>
+</body>
+</html>

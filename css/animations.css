@@ -1,0 +1,69 @@
+/* ── Float animations (hero cards) ── */
+@keyframes float {
+  0%,100% { transform: translateY(0) rotate(-2deg); }
+  50%      { transform: translateY(-10px) rotate(-2deg); }
+}
+@keyframes float2 {
+  0%,100% { transform: translateY(0) rotate(4deg); }
+  50%      { transform: translateY(-6px) rotate(4deg); }
+}
+@keyframes float3 {
+  0%,100% { transform: translateY(0); }
+  50%      { transform: translateY(-8px); }
+}
+
+/* ── Pulse (live badge) ── */
+@keyframes pulse {
+  0%,100% { opacity:1; transform:scale(1); }
+  50%      { opacity:0.5; transform:scale(1.5); }
+}
+
+/* ── Modal entrance ── */
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+.modal { animation: slideUp 0.28s ease; }
+
+/* ── Fade in ── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-in { animation: fadeIn 0.4s ease forwards; }
+
+/* ── Card hover lift (applied via CSS class) ── */
+.lift { transition: transform 0.2s, box-shadow 0.2s; }
+.lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 48px rgba(45,122,79,0.12);
+}
+
+/* ── Smooth page transitions ── */
+.page-enter {
+  animation: fadeIn 0.3s ease forwards;
+}
+
+/* ── Progress bar fill ── */
+@keyframes fillBar {
+  from { width: 0; }
+  to   { width: var(--fill); }
+}
+.progress-bar {
+  height: 8px; background: var(--mint-mist); border-radius: 99px; overflow: hidden;
+}
+.progress-fill {
+  height: 100%; background: var(--mint); border-radius: 99px;
+  animation: fillBar 0.8s ease forwards;
+}
+
+/* ── Spinner ── */
+@keyframes spin { to { transform: rotate(360deg); } }
+.spinner {
+  width: 22px; height: 22px;
+  border: 3px solid var(--mint-mist);
+  border-top-color: var(--mint);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  display: inline-block;
+}

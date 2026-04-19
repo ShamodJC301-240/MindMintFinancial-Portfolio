@@ -1,0 +1,7 @@
+{
+  "guides": [
+    { "id": 1, "title": "Monthly Budget Worksheet", "description": "A fillable PDF to track income, expenses, and savings goals each month.", "pages": 2, "file": "../assets/pdfs/monthly-budget.pdf" },
+    { "id": 2, "title": "Debt Payoff Planner", "description": "List all your debts, apply the avalanche or snowball method, and see your payoff date.", "pages": 3, "file": "../assets/pdfs/debt-planner.pdf" },
+    { "id": 3, "title": "Investment Starter Checklist", "description": "A step-by-step checklist for opening your first investment account and choosing funds.", "pages": 1, "file": "../assets/pdfs/investment-checklist.pdf" }
+  ]
+}

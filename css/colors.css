@@ -1,0 +1,28 @@
+:root {
+  /* ── Brand Greens ── */
+  --mint:        #2D7A4F;
+  --mint-light:  #3CA066;
+  --mint-pale:   #E8F5EE;
+  --mint-mist:   #C8E8D4;
+  --forest:      #1A4D32;
+
+  /* ── Neutrals ── */
+  --white:       #FAFDF9;
+  --off-white:   #F0F7F3;
+  --gray-100:    #F4F6F5;
+  --gray-200:    #E2E8E4;
+  --gray-400:    #9EB0A4;
+  --gray-600:    #5A7A66;
+  --text:        #1C2B22;
+  --text-muted:  #5A7A66;
+
+  /* ── Accent ── */
+  --gold:        #C8A84B;
+  --gold-light:  #F0D890;
+
+  /* ── Semantic ── */
+  --success:     #2D7A4F;
+  --warning:     #C8A84B;
+  --danger:      #C0392B;
+  --info:        #2980B9;
+}

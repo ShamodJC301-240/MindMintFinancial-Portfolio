@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tools — The Mint</title>
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo">The <span>Mint</span></a>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="learn.html">Learn</a></li>
+    <li><a href="tools.html" class="active">Tools</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="accounts.html" class="nav-cta">My Account</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="section-label">Financial Tools</div>
+    <h1 class="section-title">Calculators & planners.</h1>
+    <p class="section-sub">Interactive tools to help you make smarter financial decisions — no guesswork required.</p>
+  </div>
+</div>
+
+<!-- COMPOUND INTEREST -->
+<section class="section" id="compound-calculator">
+  <div class="container">
+    <div class="two-col">
+      <div>
+        <div class="section-label">Calculator</div>
+        <h2 class="section-title">Compound Interest</h2>
+        <p class="section-sub" style="margin-bottom:32px">See how your savings grow over time with the power of compounding.</p>
+        <div class="field"><label>INITIAL DEPOSIT ($)</label><input type="number" id="ci-principal" placeholder="5000" value="5000"></div>
+        <div class="field"><label>ANNUAL INTEREST RATE (%)</label><input type="number" id="ci-rate" placeholder="7" value="7" step="0.1"></div>
+        <div class="field"><label>TIME PERIOD (YEARS)</label><input type="number" id="ci-years" placeholder="20" value="20"></div>
+        <div class="field"><label>COMPOUNDING FREQUENCY</label>
+          <select id="ci-compound">
+            <option value="12">Monthly</option>
+            <option value="4">Quarterly</option>
+            <option value="1">Annually</option>
+            <option value="365">Daily</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" onclick="calcCompoundInterest()">Calculate Growth</button>
+        <div id="ci-result"></div>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:center">
+        <div style="text-align:center;padding:40px">
+          <div style="font-size:64px;margin-bottom:16px">📈</div>
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.7">A $5,000 deposit at 7% annually, compounded monthly for 20 years, becomes over <strong style="color:var(--mint)">$19,800</strong> — with zero extra contributions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUDGET PLANNER -->
+<section class="section alt" id="budget-planner">
+  <div class="container">
+    <div class="two-col">
+      <div style="display:flex;align-items:center;justify-content:center">
+        <div style="text-align:center;padding:40px">
+          <div style="font-size:64px;margin-bottom:16px">📊</div>
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.7">The 50/30/20 rule is a simple, proven framework used by millions to take control of spending without feeling restricted.</p>
+        </div>
+      </div>
+      <div>
+        <div class="section-label">Planner</div>
+        <h2 class="section-title">Budget Planner</h2>
+        <p class="section-sub" style="margin-bottom:32px">Enter your monthly take-home income and see the 50/30/20 breakdown instantly.</p>
+        <div class="field"><label>MONTHLY TAKE-HOME INCOME ($)</label><input type="number" id="budget-income" placeholder="5000" value="5000"></div>
+        <button class="btn btn-primary" onclick="calcBudget()">Plan My Budget</button>
+        <div id="budget-result"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOAN CALCULATOR -->
+<section class="section" id="loan-calculator">
+  <div class="container">
+    <div class="two-col">
+      <div>
+        <div class="section-label">Calculator</div>
+        <h2 class="section-title">Loan Calculator</h2>
+        <p class="section-sub" style="margin-bottom:32px">Understand your true cost of borrowing before you sign anything.</p>
+        <div class="field"><label>LOAN AMOUNT ($)</label><input type="number" id="loan-amount" placeholder="20000" value="20000"></div>
+        <div class="field"><label>ANNUAL INTEREST RATE (%)</label><input type="number" id="loan-rate" placeholder="6.5" value="6.5" step="0.1"></div>
+        <div class="field"><label>LOAN TERM (MONTHS)</label><input type="number" id="loan-term" placeholder="60" value="60"></div>
+        <button class="btn btn-primary" onclick="calcLoan()">Calculate Payment</button>
+        <div id="loan-result"></div>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:center">
+        <div style="text-align:center;padding:40px">
+          <div style="font-size:64px;margin-bottom:16px">🏦</div>
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.7">Even a 1% difference in interest rate on a $20,000 loan can mean <strong style="color:var(--mint)">$500+ more</strong> paid over the life of the loan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div><div class="footer-logo">The <span>Mint</span></div><p class="footer-desc">Modern banking for New York City.<br>FDIC insured. Member since 2024.</p></div>
+  <div><div class="footer-h">Banking</div><ul class="footer-links"><li><a href="accounts.html">Checking</a></li><li><a href="accounts.html">Savings</a></li></ul></div>
+  <div><div class="footer-h">Learn</div><ul class="footer-links"><li><a href="learn.html">Articles</a></li><li><a href="tools.html">Tools</a></li></ul></div>
+  <div><div class="footer-h">Company</div><ul class="footer-links"><li><a href="about.html">About</a></li><li><a href="#">Careers</a></li></ul></div>
+</footer>
+<div class="footer-bottom">© 2026 The Mint Bank. All rights reserved.</div>
+
+<script type="module" src="js/main.js"></script>
+<script type="module" src="js/tools.js"></script>
+</body>
+</html>

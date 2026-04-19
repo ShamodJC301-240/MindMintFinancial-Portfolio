@@ -1,0 +1,7 @@
+{
+  "tools": [
+    { "id": 1, "name": "Compound Interest Calculator", "icon": "📈", "description": "See how your savings grow over time with the power of compounding.", "anchor": "#compound-calculator" },
+    { "id": 2, "name": "Budget Planner", "icon": "📊", "description": "Apply the 50/30/20 rule to your monthly income instantly.", "anchor": "#budget-planner" },
+    { "id": 3, "name": "Loan Calculator", "icon": "🏦", "description": "Calculate monthly payments, total interest, and payoff dates for any loan.", "anchor": "#loan-calculator" }
+  ]
+}

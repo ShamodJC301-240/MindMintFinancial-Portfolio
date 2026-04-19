@@ -1,0 +1,10 @@
+{
+  "articles": [
+    { "id": 1, "title": "Building Your First Emergency Fund", "category": "Saving", "summary": "Learn why 3–6 months of expenses is the foundation of financial security and how to get there step by step.", "readTime": 5, "url": "#" },
+    { "id": 2, "title": "How Compound Interest Actually Works", "category": "Investing", "summary": "Einstein called it the eighth wonder of the world. Here's how to make compound interest work for you, not against you.", "readTime": 7, "url": "#" },
+    { "id": 3, "title": "The 50/30/20 Budget Rule Explained", "category": "Budgeting", "summary": "A simple framework for allocating your income to needs, wants, and savings — no spreadsheet required.", "readTime": 4, "url": "#" },
+    { "id": 4, "title": "Credit Scores: What Actually Moves the Needle", "category": "Credit", "summary": "Your score is made up of five factors. We break down which ones matter most and how to improve them fast.", "readTime": 6, "url": "#" },
+    { "id": 5, "title": "Roth vs Traditional IRA: Which Is Right for You?", "category": "Investing", "summary": "Tax now or tax later? The answer depends on your current bracket and where you expect to be in retirement.", "readTime": 8, "url": "#" },
+    { "id": 6, "title": "Paying Off Debt: Avalanche vs Snowball Method", "category": "Debt", "summary": "Two proven strategies for eliminating debt. One saves more money; the other keeps you more motivated.", "readTime": 5, "url": "#" }
+  ]
+}
